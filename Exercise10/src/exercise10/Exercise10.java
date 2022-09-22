@@ -5,16 +5,25 @@ import java.util.Scanner;
 public class Exercise10 {
 
 	public static void main(String[] args) {
-		Scanner lectura = new Scanner (System.in);
-			System.out.print("Introduzca tu cumpleaños: ");
-			Scanner lectura = new Scanner (System.in);
-			System.out.print("Introduzca la fecha de hoy: ");
+		// creamos el scanner 
+		Scanner sc = new Scanner (System.in);
+		//pedimos el año de nacimiento
+			System.out.print("Introduzca tu año de nacimiento: ");
+			// creamos la variable en la cual vamos a guardar el año de nacimiento 
 			int cump;
-			cump= lectura.nextInt();
+			//guardamos el año en la variable
+			cump= sc.nextInt();
+			//pedimos al cliente el año actual
+			System.out.print("\nInrtoduzca el año actual: ");
+			// creamos la variable
 			int fecha;
-			fecha=lectu
-				System.out.print("En tu proximo cumpleaños cumpliras: " + masUno);
-		lectura.close();
+			// guardamos el año actual en la variable creada
+			fecha= sc.nextInt();
+			// creamos una variable en la que guardaremos el resultado de la operación
+			int res=fecha-cump;
+			// mostramos el resultado de la operacion
+				System.out.print("Usted tiene: "+ res +" Años");
+		sc.close();
 	}
 
 }
